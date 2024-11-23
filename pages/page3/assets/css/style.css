@@ -115,7 +115,6 @@ body {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-    justify-content: space-between; /* Ensures proper spacing */
 }
 
 /* Blog Posts Grid */
@@ -235,19 +234,10 @@ body {
 @media (max-width: 768px) {
     .blog-section {
         flex-direction: column;
-        gap: 1rem; /* Reduces gap between sections */
     }
 
     .blog-sidebar {
         margin-top: 2rem;
-    }
-
-    .blog-container {
-        grid-template-columns: 1fr; /* Stacks posts in one column */
-    }
-
-    .contact-us h2 {
-        font-size: 1.5rem;
     }
 
     .product-section {
