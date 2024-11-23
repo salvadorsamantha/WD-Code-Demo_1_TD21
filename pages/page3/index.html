@@ -128,12 +128,21 @@
     </section>
 
     <script>
-        // JavaScript to toggle FAQ answers
-        document.querySelectorAll('.faq-item').forEach(item => {
+        // JavaScript for FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach((item) => {
             item.addEventListener('click', () => {
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach((otherItem) => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('open');
+                    }
+                });
+
+                // Toggle the current item
                 item.classList.toggle('open');
             });
         });
     </script>
 </body>
+</html>
 </html>
