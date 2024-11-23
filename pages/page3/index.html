@@ -6,83 +6,8 @@
     <title>FAQ - Flower Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        /* FAQ Section Styles */
-        .faq {
-            padding: 3rem 1rem;
-            background-color: #ffe7b4;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .faq h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #F25278;
-        }
-
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background-color: #fff;
-            margin-bottom: 1rem;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-
-        .faq-item:hover {
-            box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-            transform: translateY(-0.2rem);
-        }
-
-        .faq-item a {
-            display: block;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #F25278;
-            text-decoration: none;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-
-        .faq-item a:hover {
-            color: #333;
-        }
-
-        .faq-item p {
-            display: none;
-            font-size: 1rem;
-            color: #333;
-            margin-top: 0.5rem;
-        }
-
-        /* Expandable FAQ Item */
-        .faq-item.open p {
-            display: block;
-        }
-
-        .faq-item.open a::after {
-            content: '▲';
-            float: right;
-            font-size: 1rem;
-            color: #F25278;
-        }
-
-        .faq-item a::after {
-            content: '▼';
-            float: right;
-            font-size: 1rem;
-            color: #F25278;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header class="header">
         <nav class="navbar">
             <a href="./index.html">
@@ -95,11 +20,11 @@
             <a href="./index-copy.html#special-offers" class="nav-link">Special Offers</a>
             <a href="./index.html" class="nav-link">FAQ</a>
             <a href="./index-copy.html#customer-reviews" class="nav-link">Customer Reviews</a>
-            <a href="./index-copy2.html" class="nav-link">Blog</a>
+            <a href="./pages/page2/index.html" class="nav-link">Blog</a>
         </nav>
     </header>
+    
 
-    <!-- FAQ Section -->
     <section id="faq" class="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
@@ -145,21 +70,8 @@
             </div>
             <div class="faq-item">
                 <a href="#faq11">What packages do you offer?</a>
-                <p id="faq11">We offer different packages, including Bouquets, Arrangements, and Custom Orders. You can view the full list on our <a href="./index-copy.html#arrangement">Arrangements</a> page.</p>
-        </div>
-    </section>
+                <p id="faq11">We offer different packages, including Bouquets, Arrangements, and Custom Orders. You can view the full list on our <a href="arrangements.html">Arrangements</a> page.</p>
+            </div>
 
-    <script>
-        // Toggle FAQ Answer Visibility
-        document.querySelectorAll('.faq-item a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const faqItem = link.parentElement;
-
-                // Toggle 'open' class for the clicked item
-                faqItem.classList.toggle('open');
-            });
-        });
-    </script>
 </body>
 </html>
