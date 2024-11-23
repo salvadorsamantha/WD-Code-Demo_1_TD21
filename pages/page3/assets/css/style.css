@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     text-decoration:none;
+    text-decoration: none;
 }
 
 /* Body and Font Styles */
@@ -27,7 +27,6 @@ body {
     height: auto;
     margin-right: 3rem; /* Reduced margin */
 }
-
 
 .nav-link {
     color: white;
@@ -97,7 +96,7 @@ body {
     padding: 1rem 2rem;
     border: 0.1875rem solid white;
     color: white;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none;
     font-size: 1.2rem;
     border-radius: 0.4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
