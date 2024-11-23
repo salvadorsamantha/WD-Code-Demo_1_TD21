@@ -1,10 +1,9 @@
 /* Global Reset */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     text-decoration:none;
+    text-decoration: none; /* Applied globally */
 }
 
 /* Body and Font Styles */
@@ -20,18 +19,19 @@ body {
     align-items: center;
     background: #F25278;
     padding: 1rem;
-    text-align: center;
+    justify-content: space-between; /* Adjusts items spacing */
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .logo {
-    width: 4rem; /* Adjusted size */
+    width: 6.25rem; /* Adjust size as needed */
     height: auto;
-    margin-right: 3rem; /* Reduced margin */
+    margin-right: 2rem; /* Reduced to improve spacing */
 }
 
 .nav-link {
     color: white;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none; /* Ensures no underline */
     margin: 0 1rem;
     font-weight: bold;
 }
@@ -97,7 +97,7 @@ body {
     padding: 1rem 2rem;
     border: 0.1875rem solid white;
     color: white;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none; /* No text decoration */
     font-size: 1.2rem;
     border-radius: 0.4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -222,7 +222,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none; /* No text decoration */
 }
 
 button.prev:hover, button.next:hover {
@@ -243,7 +243,37 @@ button.prev:hover, button.next:hover {
 
 /* Responsive Design */
 @media (max-width: 48rem) {
+    .navbar {
+        flex-direction: column; /* Stack navbar links vertically on small screens */
+        text-align: left;
+    }
+
+    .logo {
+        margin-right: 0; /* Remove excessive margin */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Display products in a single column on small screens */
+    }
+
     .blog-section {
+        display: grid;
         grid-template-columns: 1fr;
+    }
+
+    /* Ensuring header text is responsive */
+    .header-content h1 {
+        font-size: 3rem; /* Decrease font size for smaller screens */
+    }
+
+    .header-content p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .header-content a {
+        font-size: 1rem; /* Smaller button text */
+        padding: 0.8rem 1.5rem; /* Smaller button size */
     }
 }

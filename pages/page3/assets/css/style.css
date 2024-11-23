@@ -19,14 +19,14 @@ body {
     align-items: center;
     background: #F25278;
     padding: 1rem;
-    text-align: center;
+    justify-content: space-between; /* Adjusts items spacing */
     flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .logo {
     width: 6.25rem; /* Adjust size as needed */
     height: auto;
-    margin-right: 10rem;
+    margin-right: 2rem; /* Reduced to improve spacing */
 }
 
 .nav-link {
@@ -248,6 +248,11 @@ button.prev:hover, button.next:hover {
         text-align: left;
     }
 
+    .logo {
+        margin-right: 0; /* Remove excessive margin */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
     .product-grid {
         display: grid;
         grid-template-columns: 1fr; /* Display products in a single column on small screens */
@@ -256,5 +261,19 @@ button.prev:hover, button.next:hover {
     .blog-section {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    /* Ensuring header text is responsive */
+    .header-content h1 {
+        font-size: 3rem; /* Decrease font size for smaller screens */
+    }
+
+    .header-content p {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .header-content a {
+        font-size: 1rem; /* Smaller button text */
+        padding: 0.8rem 1.5rem; /* Smaller button size */
     }
 }
