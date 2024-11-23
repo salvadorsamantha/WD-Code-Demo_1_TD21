@@ -1,9 +1,10 @@
 /* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none; /* Applied globally */
+     text-decoration:none;
 }
 
 /* Body and Font Styles */
@@ -20,18 +21,17 @@ body {
     background: #F25278;
     padding: 1rem;
     text-align: center;
-    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .logo {
-    width: 6.25rem; /* Adjust size as needed */
+    width: 4rem; /* Adjusted size */
     height: auto;
-    margin-right: 10rem;
+    margin-right: 3rem; /* Reduced margin */
 }
 
 .nav-link {
     color: white;
-    text-decoration: none; /* Ensures no underline */
+    text-decoration: none; /* Added text-decoration */
     margin: 0 1rem;
     font-weight: bold;
 }
@@ -97,7 +97,7 @@ body {
     padding: 1rem 2rem;
     border: 0.1875rem solid white;
     color: white;
-    text-decoration: none; /* No text decoration */
+    text-decoration: none; /* Added text-decoration */
     font-size: 1.2rem;
     border-radius: 0.4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -222,7 +222,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    text-decoration: none; /* No text decoration */
+    text-decoration: none; /* Added text-decoration */
 }
 
 button.prev:hover, button.next:hover {
@@ -243,18 +243,7 @@ button.prev:hover, button.next:hover {
 
 /* Responsive Design */
 @media (max-width: 48rem) {
-    .navbar {
-        flex-direction: column; /* Stack navbar links vertically on small screens */
-        text-align: left;
-    }
-
-    .product-grid {
-        display: grid;
-        grid-template-columns: 1fr; /* Display products in a single column on small screens */
-    }
-
     .blog-section {
-        display: grid;
         grid-template-columns: 1fr;
     }
 }
