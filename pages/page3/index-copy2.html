@@ -5,146 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            background: #F25278;
-            padding: 1rem;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .navbar .nav-link {
-            text-decoration: none;
-            color: white;
-            margin: 0 0.5rem;
-            font-weight: 600;
-        }
-
-        .navbar .nav-link.active {
-            text-decoration: underline;
-        }
-
-        .logo {
-            max-height: 50px;
-        }
-
-        .blog-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .blog-posts, .blog-sidebar {
-            background: #fff;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-        }
-
-        .blog-posts {
-            flex: 3;
-        }
-
-        .blog-posts h1 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #F25278;
-        }
-
-        .blog-posts .post {
-            margin-bottom: 2rem;
-        }
-
-        .blog-posts .post img {
-            width: 100%;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .blog-posts .post h3 {
-            color: #F25278;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-posts .post-meta {
-            font-size: 0.875rem;
-            color: #777;
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-posts .post p {
-            color: #333;
-            font-size: 1rem;
-        }
-
-        .blog-sidebar {
-            flex: 1;
-        }
-
-        .blog-sidebar h2 {
-            font-size: 1.5rem;
-            color: #F25278;
-            margin-bottom: 1rem;
-        }
-
-        .blog-sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .blog-sidebar ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-sidebar ul li a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s ease;
-        }
-
-        .blog-sidebar ul li a:hover {
-            color: #F25278;
-        }
-
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.875rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .blog-section {
-                flex-direction: column;
-            }
-
-            .blog-sidebar {
-                margin-top: 2rem;
-            }
-
-            .blog-posts h1 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -166,52 +27,58 @@
     
     <!-- Blog Section -->
     <main class="blog-section">
-        <!-- Blog Posts -->
-        <section class="blog-posts">
-            <h1>Latest Blog Posts</h1>
-            <div class="post">
-                <img src="./assets/images/blog1.jpg" alt="5 Tips for Arranging Flowers Like a Pro">
-                <h3>5 Tips for Arranging Flowers Like a Pro</h3>
-                <p class="post-meta">Posted on November 22, 2024</p>
-                <p>Discover the secrets to creating stunning flower arrangements that wow any audience.</p>
-            </div>
-            <div class="post">
-                <img src="./assets/images/blog2.jpg" alt="Choosing the Perfect Bouquet for Every Occasion">
-                <h3>Choosing the Perfect Bouquet for Every Occasion</h3>
-                <p class="post-meta">Posted on November 15, 2024</p>
-                <p>Find the ideal floral arrangements for weddings, anniversaries, and more.</p>
-            </div>
-            <div class="post">
-                <img src="./assets/images/blog3.jpg" alt="The Meaning Behind Popular Flowers">
-                <h3>The Meaning Behind Popular Flowers</h3>
-                <p class="post-meta">Posted on November 8, 2024</p>
-                <p>Learn the symbolism of roses, lilies, and other favorite blooms.</p>
-            </div>
-        </section>
+        <div class="container">
+            <!-- Blog Posts -->
+            <section class="blog-posts">
+                <h1>Latest Blog Posts</h1>
+                <div class="post">
+                    <img src="images/blog1.jpg" alt="5 Tips for Arranging Flowers Like a Pro">
+                    <h3>5 Tips for Arranging Flowers Like a Pro</h3>
+                    <p class="post-meta">Posted on November 22, 2024</p>
+                    <p>Discover the secrets to creating stunning flower arrangements that wow any audience.</p>
+                </div>
 
-        <!-- Blog Sidebar -->
-        <aside class="blog-sidebar">
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="#">Flower Arrangements</a></li>
-                <li><a href="#">Special Occasions</a></li>
-                <li><a href="#">Tips & Tricks</a></li>
-                <li><a href="#">Seasonal Flowers</a></li>
-            </ul>
-            <h2>Recent Posts</h2>
-            <ul>
-                <li><a href="#">Holiday Gift Guide: Flowers & Beyond</a></li>
-                <li><a href="#">Creating a Floral Centerpiece</a></li>
-                <li><a href="#">Sustainable Floristry Tips</a></li>
-            </ul>
-        </aside>
+                <div class="post">
+                    <img src="images/blog2.jpg" alt="Choosing the Perfect Bouquet for Every Occasion">
+                    <h3>Choosing the Perfect Bouquet for Every Occasion</h3>
+                    <p class="post-meta">Posted on November 15, 2024</p>
+                    <p>Find the ideal floral arrangements for weddings, anniversaries, and more.</p>
+                </div>
+
+                <div class="post">
+                    <img src="images/blog3.jpg" alt="The Meaning Behind Popular Flowers">
+                    <h3>The Meaning Behind Popular Flowers</h3>
+                    <p class="post-meta">Posted on November 8, 2024</p>
+                    <p>Learn the symbolism of roses, lilies, and other favorite blooms.</p>
+                </div>
+            </section>
+
+            <!-- Blog Sidebar -->
+            <aside class="blog-sidebar">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Flower Arrangements</a></li>
+                    <li><a href="#">Special Occasions</a></li>
+                    <li><a href="#">Tips & Tricks</a></li>
+                    <li><a href="#">Seasonal Flowers</a></li>
+                </ul>
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Holiday Gift Guide: Flowers & Beyond</a></li>
+                    <li><a href="#">Creating a Floral Centerpiece</a></li>
+                    <li><a href="#">Sustainable Floristry Tips</a></li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>Email: contact@flowershop.ph | Phone: +63 912 345 6789</p>
-        <p>Address: 123 Flower Street, Makati, Manila</p>
-        <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+        <div class="footer-info">
+            <p>Email: contact@flowershop.ph | Phone: +63 912 345 6789</p>
+            <p>Address: 123 Flower Street, Makati, Manila</p>
+            <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
