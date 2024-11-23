@@ -6,8 +6,83 @@
     <title>FAQ - Flower Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* FAQ Section Styles */
+        .faq {
+            padding: 3rem 1rem;
+            background-color: #ffe7b4;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .faq h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #F25278;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+            transform: translateY(-0.2rem);
+        }
+
+        .faq-item a {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #F25278;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .faq-item a:hover {
+            color: #333;
+        }
+
+        .faq-item p {
+            display: none;
+            font-size: 1rem;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+
+        /* Expandable FAQ Item */
+        .faq-item.open p {
+            display: block;
+        }
+
+        .faq-item.open a::after {
+            content: '▲';
+            float: right;
+            font-size: 1rem;
+            color: #F25278;
+        }
+
+        .faq-item a::after {
+            content: '▼';
+            float: right;
+            font-size: 1rem;
+            color: #F25278;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav class="navbar">
             <a href="./index.html">
@@ -24,10 +99,7 @@
         </nav>
     </header>
 
-        <!-- section content -->
-</body>
-</html>
-
+    <!-- FAQ Section -->
     <section id="faq" class="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
@@ -43,38 +115,21 @@
                 <a href="#faq3">How much is your delivery fee in Makati?</a>
                 <p id="faq3">The delivery fee in Makati is ₱100.</p>
             </div>
-            <div class="faq-item">
-                <a href="#faq4">How much is your delivery fee in Quezon City?</a>
-                <p id="faq4">The delivery fee in Quezon City is ₱150.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq5">How much is your delivery fee in Manila?</a>
-                <p id="faq5">The delivery fee in Manila is ₱120.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq6">Do you accept Cash on Delivery (C.O.D.)?</a>
-                <p id="faq6">Yes, we accept Cash on Delivery (C.O.D.) for orders within Metro Manila.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq7">Do you have Same-Day Delivery?</a>
-                <p id="faq7">Yes, we offer Same-Day Delivery for orders placed before 12 PM.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq8">Can you deliver on a specific time of the day?</a>
-                <p id="faq8">Yes, we can schedule a specific delivery time if requested, depending on availability.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq9">How do I know if my order is processed?</a>
-                <p id="faq9">Once your order is processed, you will receive an email or SMS notification with your order details.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq10">How long does the delivery take?</a>
-                <p id="faq10">Delivery usually takes 1-2 days within Metro Manila, depending on the area and delivery time slot.</p>
-            </div>
-            <div class="faq-item">
-                <a href="#faq11">What packages do you offer?</a>
-                <p id="faq11">We offer different packages, including Bouquets, Arrangements, and Custom Orders. You can view the full list on our <a href="arrangements.html">Arrangements</a> page.</p>
-            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
 
+    <script>
+        // Toggle FAQ Answer Visibility
+        document.querySelectorAll('.faq-item a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const faqItem = link.parentElement;
+
+                // Toggle 'open' class for the clicked item
+                faqItem.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>
