@@ -1,4 +1,4 @@
-fix this <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,148 +6,6 @@ fix this <!DOCTYPE html>
     <title>Flower Shop Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        /* Blog Section Styling */
-        .blog-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .blog-container {
-            flex: 3;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .blog-post {
-            background: #fff;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .blog-post:hover {
-            transform: translateY(-0.3rem);
-            box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-        }
-
-        .post-image img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .post-content {
-            padding: 1rem;
-        }
-
-        .post-content h3 {
-            font-size: 1.5rem;
-            color: #F25278;
-            margin-bottom: 0.5rem;
-        }
-
-        .post-content .post-meta {
-            font-size: 0.875rem;
-            color: #777;
-            margin-bottom: 1rem;
-        }
-
-        .post-content p {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        /* Blog Sidebar Styling */
-        .blog-sidebar {
-            flex: 1;
-            background: #ffe7b4;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-sidebar h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #F25278;
-        }
-
-        .blog-sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .blog-sidebar ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-sidebar ul li a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .blog-sidebar ul li a:hover {
-            color: #F25278;
-        }
-
-        /* Footer Styling */
-        .contact-us, .footer {
-            background: #333;
-            color: #fff;
-            padding: 2rem;
-        }
-
-        .contact-us h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-info, .copyright {
-            margin-bottom: 1rem;
-        }
-
-        .footer-info h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-info p {
-            font-size: 0.875rem;
-            margin: 0.5rem 0;
-        }
-
-        .copyright p {
-            font-size: 0.875rem;
-            text-align: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .blog-section {
-                flex-direction: column;
-            }
-
-            .blog-sidebar {
-                margin-top: 2rem;
-            }
-
-            .blog-container {
-                grid-template-columns: 1fr; /* Stacks posts in one column */
-            }
-
-            .contact-us h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -172,6 +30,59 @@ fix this <!DOCTYPE html>
         <div class="blog-container">
             <div class="blog-post">
                 <div class="post-image">
-                    <img src="images/blog1.jpg" alt="Blog 1">
+                    <img src="./assets/images/blog1.jpg" alt="Blog Post 1">
                 </div>
-                <div class="post-
+                <div class="post-content">
+                    <h3>Flower Arrangement Ideas</h3>
+                    <div class="post-meta">Posted on November 10, 2024</div>
+                    <p>Discover creative ideas for arranging your flowers to suit any occasion.</p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="./assets/images/blog2.jpg" alt="Blog Post 2">
+                </div>
+                <div class="post-content">
+                    <h3>Seasonal Flower Trends</h3>
+                    <div class="post-meta">Posted on November 12, 2024</div>
+                    <p>Stay updated on the latest trends in floral arrangements for this season.</p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="./assets/images/blog3.jpg" alt="Blog Post 3">
+                </div>
+                <div class="post-content">
+                    <h3>Caring for Your Flowers</h3>
+                    <div class="post-meta">Posted on November 15, 2024</div>
+                    <p>Learn how to properly care for your flowers to keep them fresh longer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Sidebar -->
+        <aside class="blog-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Flower Arrangements</a></li>
+                <li><a href="#">Occasions</a></li>
+                <li><a href="#">Flower Care Tips</a></li>
+                <li><a href="#">Seasonal Trends</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-info">
+            <h3>About Us</h3>
+            <p>Your trusted partner for fresh flowers and creative arrangements.</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -229,145 +229,23 @@ body {
     text-align: center;
 }
 
-/* Product Section Styles */
-.product-section {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: #ffe7b4;
-    margin-bottom: 3rem;
-}
-
-.product-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.product-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    width: 15.625rem;
-    height: 21.875rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    background-color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card img {
-    width: 100%;
-    height: 11.25rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.product-info {
-    padding-top: 1rem;
-}
-
-.product-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.product-card p {
-    font-size: 1rem;
-    color: #333;
-}
-
-.product-card:hover {
-    transform: translateY(-0.625rem);
-    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-}
-
-/* Section Background Colors */
-#occasion-collections {
-    background-color: #f28b82;
-}
-
-#arrangement-collections {
-    background-color: #d0c4ff;
-}
-
-#special-offers {
-    background-color: #c5e1f7;
-}
-
-/* Reviews Section Styles */
-.reviews {
-    text-align: center;
-}
-
-.reviews-slider {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.review {
-    flex: 0 0 33.33%;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-.review-box {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.profile-pic {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-}
-
-button.prev, button.next {
-    background: #ff69b4;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    text-decoration: none; /* Added text-decoration */
-}
-
-button.prev:hover, button.next:hover {
-    color: #0066cc;
-}
-
-/* Contact Us and Footer */
-.contact-us, .footer {
-    text-align: left;
-    padding: 2rem;
-    background: #333;
-    color: #fff;
-}
-
-.footer-info {
-    margin-bottom: 1rem;
-}
-
 /* Responsive Design */
-
-@media (max-width: 48rem) {  
-    .blog-section { 
-        grid-template-columns: 1fr;             
+@media (max-width: 768px) {
+    .blog-section {
+        flex-direction: column;
     }
-    
-    
+
+    .blog-sidebar {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .post-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .post-content p, .blog-sidebar ul li a {
+        font-size: 0.875rem;
+    }
 }
