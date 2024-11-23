@@ -68,6 +68,7 @@
             border-radius: 0.5rem;
             background: #ffe7b4;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
 
         .faq-item:hover {
@@ -91,13 +92,10 @@
             font-size: 1rem;
             margin: 0.5rem 0 0;
             color: #555;
-        }
-
-        .faq-item a + p {
             display: none;
         }
 
-        .faq-item.open a + p {
+        .faq-item.open p {
             display: block;
         }
 
@@ -180,5 +178,14 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // JavaScript for toggling FAQ answers
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>
