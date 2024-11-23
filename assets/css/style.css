@@ -1,10 +1,9 @@
 /* Global Reset */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     text-decoration:none;
+    text-decoration: none;
 }
 
 /* Body and Font Styles */
@@ -108,142 +107,171 @@ body {
     color: rgb(255, 161, 184);
 }
 
-/* Product Section Styles */
-.product-section {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: #ffe7b4;
-    margin-bottom: 3rem;
-}
-
-.product-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.product-grid {
+/* Blog Section Styling */
+.blog-section {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-.product-card {
-    width: 15.625rem;
-    height: 21.875rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+/* Blog Posts Grid */
+.blog-container {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background: #fff;
     border-radius: 0.5rem;
+    overflow: hidden;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-card img {
+.blog-post:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.post-image img {
     width: 100%;
-    height: 11.25rem;
+    height: 180px;
     object-fit: cover;
-    border-radius: 0.5rem;
 }
 
-.product-info {
-    padding-top: 1rem;
+.post-content {
+    padding: 1rem;
 }
 
-.product-card h3 {
+.post-content h3 {
     font-size: 1.5rem;
+    color: #F25278;
     margin-bottom: 0.5rem;
 }
 
-.product-card p {
+.post-content .post-meta {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.post-content p {
     font-size: 1rem;
     color: #333;
 }
 
-.product-card:hover {
-    transform: translateY(-0.625rem);
-    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-}
-
-/* Section Background Colors */
-#occasion-collections {
-    background-color: #f28b82;
-}
-
-#arrangement-collections {
-    background-color: #d0c4ff;
-}
-
-#special-offers {
-    background-color: #c5e1f7;
-}
-
-/* Reviews Section Styles */
-.reviews {
-    text-align: center;
-}
-
-.reviews-slider {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.review {
-    flex: 0 0 33.33%;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-.review-box {
-    background-color: white;
-    padding: 2rem;
+/* Blog Sidebar Styling */
+.blog-sidebar {
+    flex: 1;
+    background: #ffe7b4;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.profile-pic {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-}
-
-button.prev, button.next {
-    background: #ff69b4;
-    border: none;
-    color: #fff;
+.blog-sidebar h3 {
     font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    text-decoration: none; /* Added text-decoration */
+    margin-bottom: 1rem;
+    color: #F25278;
 }
 
-button.prev:hover, button.next:hover {
-    color: #0066cc;
+.blog-sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Contact Us and Footer */
+.blog-sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-sidebar ul li a:hover {
+    color: #F25278;
+}
+
+/* Footer Styling */
 .contact-us, .footer {
-    text-align: left;
-    padding: 2rem;
     background: #333;
     color: #fff;
+    padding: 2rem;
 }
 
-.footer-info {
+.contact-us h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.footer-info, .copyright {
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+}
+
+.copyright p {
+    font-size: 0.875rem;
+    text-align: center;
 }
 
 /* Responsive Design */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
     .blog-section {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .blog-sidebar {
+        margin-top: 2rem;
+    }
+
+    .product-section {
+        padding: 3rem 1rem;
+        text-align: center;
+        background-color: #ffe7b4;
+        margin-bottom: 3rem;
+    }
+
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        width: 15.625rem;
+        height: 21.875rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 11.25rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
     }
 }
