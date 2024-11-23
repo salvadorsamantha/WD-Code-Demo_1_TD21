@@ -123,18 +123,51 @@ body {
     .faq-item p {
         font-size: 0.875rem;
     }
+
+    /* Navbar Adjustments */
+    .navbar {
+        padding: 1rem;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+        font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+
+    /* Logo Adjustments */
+    .logo {
+        margin-bottom: 1rem;
+        width: 3.5rem;
+    }
 }
 
 @media (max-width: 30rem) {
     .navbar {
         flex-direction: column;
+        text-align: center;
     }
 
     .nav-link {
         margin: 0.5rem 0;
+        font-size: 1rem; /* Smaller font size for mobile screens */
     }
 
     .faq h2 {
         font-size: 1.8rem;
+    }
+
+    /* Ensure FAQ item padding is good on small screens */
+    .faq-item {
+        padding: 1rem;
+    }
+
+    .faq-item a {
+        font-size: 1rem;
+    }
+
+    .faq-item p {
+        font-size: 0.875rem;
     }
 }
