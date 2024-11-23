@@ -367,7 +367,6 @@ button.prev:hover, button.next:hover {
 @media (max-width: 48rem) {  
     .blog-section { 
         grid-template-columns: 1fr;             
-
     }
     
     
