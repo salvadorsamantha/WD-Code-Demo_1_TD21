@@ -5,147 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/">
-    <style>
-        /* Blog Section Styling */
-        .blog-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-        .blog-container {
-            flex: 3;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .blog-post {
-            background: #fff;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .blog-post:hover {
-            transform: translateY(-0.3rem);
-            box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-        }
-
-        .post-image img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .post-content {
-            padding: 1rem;
-        }
-
-        .post-content h3 {
-            font-size: 1.5rem;
-            color: #F25278;
-            margin-bottom: 0.5rem;
-        }
-
-        .post-content .post-meta {
-            font-size: 0.875rem;
-            color: #777;
-            margin-bottom: 1rem;
-        }
-
-        .post-content p {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        /* Blog Sidebar Styling */
-        .blog-sidebar {
-            flex: 1;
-            background: #ffe7b4;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-sidebar h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #F25278;
-        }
-
-        .blog-sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .blog-sidebar ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-sidebar ul li a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .blog-sidebar ul li a:hover {
-            color: #F25278;
-        }
-
-        /* Footer Styling */
-        .contact-us, .footer {
-            background: #333;
-            color: #fff;
-            padding: 2rem;
-        }
-
-        .contact-us h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-info, .copyright {
-            margin-bottom: 1rem;
-        }
-
-        .footer-info h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-info p {
-            font-size: 0.875rem;
-            margin: 0.5rem 0;
-        }
-
-        .copyright p {
-            font-size: 0.875rem;
-            text-align: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .blog-section {
-                flex-direction: column;
-            }
-
-            .blog-sidebar {
-                margin-top: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
     <header class="header">
         <nav class="navbar">
             <a href="./index.html">
-                <img src="./assets/images/ITS ME.jpg" alt="Flower Shop Logo" class="logo">
+                <img src="./images/ITS ME.jpg" alt="Flower Shop Logo" class="logo">
             </a>
             <a href="./index1.html" class="nav-link">Home</a>
             <a href="./index1.html#flower-collections" class="nav-link">Our Flower Collections</a>
@@ -157,7 +22,9 @@
             <a href="./index.html" class="nav-link">Blog</a>
         </nav>
     </header>
-
+    
+          
+    
     <!-- Blog Section -->
     <main class="blog-section">
         <!-- Blog Posts -->
@@ -172,6 +39,7 @@
                     <p>Discover the secrets to creating stunning flower arrangements that wow any audience.</p>
                 </div>
             </div>
+
             <div class="blog-post">
                 <div class="post-image">
                     <img src="images/blog2.jpg" alt="Blog 2">
@@ -182,6 +50,7 @@
                     <p>Find the ideal floral arrangements for weddings, anniversaries, and more.</p>
                 </div>
             </div>
+
             <div class="blog-post">
                 <div class="post-image">
                     <img src="images/blog3.jpg" alt="Blog 3">
