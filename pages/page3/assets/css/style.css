@@ -230,7 +230,7 @@ button.prev:hover, button.next:hover {
 
 /* Contact Us and Footer */
 .contact-us, .footer {
-    text-align: center;
+    text-align:left;
     padding: 2rem;
     background: #333;
     color: #fff;
