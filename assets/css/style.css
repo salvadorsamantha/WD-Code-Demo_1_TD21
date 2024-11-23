@@ -17,27 +17,26 @@ body {
     display: flex;
     align-items: center;
     background: #F25278;
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
 }
 
 .logo {
     width: 100px; /* Adjust size as needed */
     height: auto;
-    margin-right: 10rem;
+    margin-right: 160px;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 16px;
     font-weight: bold;
 }
 
 .nav-link:hover {
     color: #333;
 }
-
 
 /* Header Styles */
 .header {
@@ -75,30 +74,30 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.8); /* Slightly stronger shadow */
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow */
 }
 
 .header-content h1 {
-    font-size: 4rem; /* Increased font size */
+    font-size: 64px; /* Increased font size */
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
 }
 
 .header-content p {
-    font-size: 1.5rem; /* Larger text for the paragraph */
-    margin: 1.5rem 0;
+    font-size: 24px; /* Larger text for the paragraph */
+    margin: 24px 0;
 }
 
 .header-content a {
     display: inline-block;
-    margin: 0.7rem;
-    padding: 1rem 2rem; /* Larger buttons */
-    border: 0.2rem solid white;
+    margin: 11px;
+    padding: 16px 32px; /* Larger buttons */
+    border: 3px solid white;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem; /* Larger button text */
-    border-radius: 0.4rem;
+    font-size: 19.2px; /* Larger button text */
+    border-radius: 6.4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -107,31 +106,30 @@ body {
     color: rgb(255, 161, 184);
 }
 
-
 /* Product Section Styles */
 .product-section {
-    padding: 3rem 1rem;
+    padding: 48px 16px;
     text-align: center;
     background-color: #ffe7b4;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 
 .product-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 40px;
+    margin-bottom: 32px;
 }
 
 .product-grid {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
     flex-wrap: wrap;
 }
 
 .product-card {
     width: 250px;
     height: 350px;
-    padding: 1.5rem;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,16 +148,16 @@ body {
 }
 
 .product-info {
-    padding-top: 1rem;
+    padding-top: 16px;
 }
 
 .product-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 .product-card p {
-    font-size: 1rem;
+    font-size: 16px;
     color: #333;
 }
 
@@ -194,23 +192,23 @@ body {
 
 .review {
     flex: 0 0 33.33%;
-    padding: 1rem;
+    padding: 16px;
     box-sizing: border-box;
 }
 
 .review-box {
     background-color: white;
-    padding: 2rem;
+    padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .profile-pic {
-    width: 6rem;
-    height: 6rem;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     object-fit: cover;
 }
 
@@ -218,10 +216,10 @@ button.prev, button.next {
     background: #ff69b4;
     border: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 24px;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
+    padding: 8px 16px;
+    margin: 16px;
 }
 
 button.prev:hover, button.next:hover {
@@ -230,182 +228,14 @@ button.prev:hover, button.next:hover {
 
 /* Contact Us and Footer */
 .contact-us, .footer {
-    text-align: center;
-    padding: 2rem;
+    text-align:left;
+    padding: 32px;
     background: #333;
     color: #fff;
 }
 
 .footer-info {
-    margin-bottom: 1rem;
-}
-
-/* FAQ Section Styles */
-.faq {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #f8f9fa; /* Light grey background */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
-}
-
-.faq h2 {
-    text-align: center;
-    color: #ff69b4; /* Matching the flower shop theme */
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-}
-
-.faq-list {
-    padding: 0;
-    list-style-type: none;
-}
-
-.faq-item {
-    border-bottom: 1px solid #e0e0e0;
-    padding: 1rem 0;
-    transition: background-color 0.3s ease;
-}
-
-.faq-item:hover {
-    background-color: #ffecf1; /* Light pink on hover */
-    border-radius: 8px;
-}
-
-.faq-item a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-.faq-item a:hover {
-    color: #ff69b4; /* Theme color on hover */
-    text-decoration: underline;
-}
-
-.faq-item p {
-    margin-top: 0.5rem;
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* FAQ Item Animation */
-.faq-item a::before {
-    content: "❓";
-    margin-right: 8px;
-    color: #ff69b4; /* Question mark color */
-}
-
-.faq-item p {
-    margin-left: 20px; /* Indent answer for visual structure */
-    color: #666;
-    display: none; /* Hide answer by default */
-}
-
-.faq-item a:focus + p,
-.faq-item a:hover + p {
-    display: block; /* Show answer on link focus or hover */
-    transition: opacity 0.3s ease;
-}
-
-/* Blog Section Styles */
-.blog-section {
-    max-width: 1200px;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.blog-container {
-    display: grid;
-    gap: 2rem;
-}
-
-.blog-post {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.post-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.post-content {
-    padding: 1rem;
-}
-
-.post-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #d62273; /* Theme color */
-    transition: color 0.3s ease;
-}
-
-.post-content h3:hover {
-    color: #a0185c; /* Darker hover effect */
-}
-
-.post-content .post-meta {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.post-content p {
-    margin-bottom: 0;
-}
-
-/* Blog Sidebar Styles */
-.blog-sidebar {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.blog-sidebar h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #d62273; /* Theme color */
-}
-
-.blog-sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.blog-sidebar ul li {
-    margin-bottom: 0.5rem;
-}
-
-.blog-sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.blog-sidebar ul li a:hover {
-    color: #d62273;
+    margin-bottom: 16px;
 }
 
 /* Responsive Design */
