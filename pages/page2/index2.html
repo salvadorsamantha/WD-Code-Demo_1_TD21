@@ -68,7 +68,6 @@
             border-radius: 0.5rem;
             background: #ffe7b4;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
         }
 
         .faq-item:hover {
@@ -92,11 +91,14 @@
             font-size: 1rem;
             margin: 0.5rem 0 0;
             color: #555;
-            display: none; /* Hidden by default */
         }
 
-        .faq-item.open p {
-            display: block; /* Show when "open" class is added */
+        .faq-item a + p {
+            display: none;
+        }
+
+        .faq-item.open a + p {
+            display: block;
         }
 
         /* Responsive Design */
@@ -148,24 +150,14 @@
                 <a href="#faq4">How much is your delivery fee in Quezon City?</a>
                 <p id="faq4">The delivery fee in Quezon City is ₱150.</p>
             </div>
-            <div class="faq-item">
+            <div> class="faq-item">
                 <a href="#faq5">How much is your delivery fee in Manila?</a>
                 <p id="faq5">The delivery fee in Manila is ₱120.</p>
             </div>
-        </div>
-    </section>
+            <section>
 
     <footer class="footer">
         <p>&copy; 2024 Flower Shop. All rights reserved.</p>
     </footer>
-
-    <script>
-        // JavaScript to toggle FAQ answers
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('open');
-            });
-        });
-    </script>
 </body>
 </html>
