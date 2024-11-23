@@ -23,9 +23,9 @@ body {
 }
 
 .logo {
-    width: 6.25rem; /* Adjust size as needed */
+    width: 4rem; /* Adjusted size */
     height: auto;
-    margin-right: 10rem;
+    margin-right: 3rem; /* Reduced margin */
 }
 
 .nav-link {
@@ -43,7 +43,7 @@ body {
 .header {
     position: relative;
     text-align: center;
-    color: white;
+    color: #F25278;
     overflow: hidden;
 }
 
