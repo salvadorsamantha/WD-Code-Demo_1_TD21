@@ -48,18 +48,10 @@
             text-decoration: none;
             margin-bottom: 0.5rem;
             cursor: pointer;
-            position: relative;
         }
 
-        .faq-item a::after {
-            content: '▼';
-            float: right;
-            font-size: 1rem;
-            color: #F25278;
-        }
-
-        .faq-item.open a::after {
-            content: '▲';
+        .faq-item a:hover {
+            color: #333;
         }
 
         .faq-item p {
@@ -69,8 +61,23 @@
             margin-top: 0.5rem;
         }
 
+        /* Expandable FAQ Item */
         .faq-item.open p {
             display: block;
+        }
+
+        .faq-item.open a::after {
+            content: '▲';
+            float: right;
+            font-size: 1rem;
+            color: #F25278;
+        }
+
+        .faq-item a::after {
+            content: '▼';
+            float: right;
+            font-size: 1rem;
+            color: #F25278;
         }
     </style>
 </head>
@@ -97,52 +104,46 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
             <div class="faq-item">
-                <a href="#faq1">How much does your cheapest flower bouquet cost?</a>
-                <p id="faq1">Our cheapest flower bouquet costs ₱350.</p>
+                <a href="javascript:void(0);">How much does your cheapest flower bouquet cost?</a>
+                <p>Our cheapest flower bouquet costs ₱350.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq2">Where are your covered delivery areas?</a>
-                <p id="faq2">We cover delivery areas within Metro Manila, including Makati, Quezon City, Manila, and surrounding areas.</p>
+                <a href="javascript:void(0);">Where are your covered delivery areas?</a>
+                <p>We cover delivery areas within Metro Manila, including Makati, Quezon City, Manila, and surrounding areas.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq3">How much is your delivery fee in Makati?</a>
-                <p id="faq3">The delivery fee in Makati is ₱100.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Makati?</a>
+                <p>The delivery fee in Makati is ₱100.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq4">How much is your delivery fee in Quezon City?</a>
-                <p id="faq4">The delivery fee in Quezon City is ₱150.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Quezon City?</a>
+                <p>The delivery fee in Quezon City is ₱150.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq5">How much is your delivery fee in Manila?</a>
-                <p id="faq5">The delivery fee in Manila is ₱120.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Manila?</a>
+                <p>The delivery fee in Manila is ₱120.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq6">Do you accept Cash on Delivery (C.O.D.)?</a>
-                <p id="faq6">Yes, we accept Cash on Delivery (C.O.D.) for orders within Metro Manila.</p>
+                <a href="javascript:void(0);">Do you accept Cash on Delivery (C.O.D.)?</a>
+                <p>Yes, we accept Cash on Delivery (C.O.D.) for orders within Metro Manila.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq7">Do you have Same-Day Delivery?</a>
-                <p id="faq7">Yes, we offer Same-Day Delivery for orders placed before 12 PM.</p>
+                <a href="javascript:void(0);">Do you have Same-Day Delivery?</a>
+                <p>Yes, we offer Same-Day Delivery for orders placed before 12 PM.</p>
             </div>
         </div>
     </section>
 
+    <!-- JavaScript to Toggle FAQ -->
     <script>
-        // JavaScript for FAQ Toggle
-        document.querySelectorAll('.faq-item').forEach((item) => {
+        document.querySelectorAll('.faq-item a').forEach((item) => {
             item.addEventListener('click', () => {
-                // Close other open items
-                document.querySelectorAll('.faq-item').forEach((otherItem) => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('open');
-                    }
-                });
-
-                // Toggle the current item
-                item.classList.toggle('open');
+                // Toggle the open class to show/hide the answer
+                const faqItem = item.closest('.faq-item');
+                faqItem.classList.toggle('open');
             });
         });
     </script>
 </body>
 </html>
-</html>
+

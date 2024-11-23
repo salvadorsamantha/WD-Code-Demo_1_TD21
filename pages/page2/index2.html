@@ -133,24 +133,24 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
             <div class="faq-item">
-                <a href="#faq1">How much does your cheapest flower bouquet cost?</a>
-                <p id="faq1">Our cheapest flower bouquet costs ₱350.</p>
+                <a href="javascript:void(0);">How much does your cheapest flower bouquet cost?</a>
+                <p>Our cheapest flower bouquet costs ₱350.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq2">Where are your covered delivery areas?</a>
-                <p id="faq2">We cover delivery areas within Metro Manila, including Makati, Quezon City, Manila, and surrounding areas.</p>
+                <a href="javascript:void(0);">Where are your covered delivery areas?</a>
+                <p>We cover delivery areas within Metro Manila, including Makati, Quezon City, Manila, and surrounding areas.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq3">How much is your delivery fee in Makati?</a>
-                <p id="faq3">The delivery fee in Makati is ₱100.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Makati?</a>
+                <p>The delivery fee in Makati is ₱100.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq4">How much is your delivery fee in Quezon City?</a>
-                <p id="faq4">The delivery fee in Quezon City is ₱150.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Quezon City?</a>
+                <p>The delivery fee in Quezon City is ₱150.</p>
             </div>
             <div class="faq-item">
-                <a href="#faq5">How much is your delivery fee in Manila?</a>
-                <p id="faq5">The delivery fee in Manila is ₱120.</p>
+                <a href="javascript:void(0);">How much is your delivery fee in Manila?</a>
+                <p>The delivery fee in Manila is ₱120.</p>
             </div>
         </div>
     </section>
@@ -159,19 +159,13 @@
         <p>&copy; 2024 Flower Shop. All rights reserved.</p>
     </footer>
 
-  <script>
-        // JavaScript for FAQ Toggle
-        document.querySelectorAll('.faq-item').forEach((item) => {
-            item.addEventListener('click', () => {
-                // Close other open items
-                document.querySelectorAll('.faq-item').forEach((otherItem) => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('open');
-                    }
-                });
-
-                // Toggle the current item
-                item.classList.toggle('open');
+    <script>
+        // JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faq-item a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent the default anchor link behavior
+                const faqItem = item.closest('.faq-item');
+                faqItem.classList.toggle('open');
             });
         });
     </script>
