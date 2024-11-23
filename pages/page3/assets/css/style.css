@@ -1,114 +1,27 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    text-decoration: none;
+    box-sizing: border-box;
+     text-decoration:none;
 }
 
-/* Header */
-.header {
-    background: #f8f8f8;
-    padding: 1rem 2rem;
+/* Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .nav-link {
-    margin: 0 1rem;
-    color: #555;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.navbar .nav-link.active {
-    color: #ff7b7b;
-    border-bottom: 2px solid #ff7b7b;
-}
-
-/* Blog Section */
-.blog-section {
-    max-width: 1200px;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.blog-posts h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.post {
-    margin-bottom: 2rem;
-}
-
-.post img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-.post h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0.5rem 0;
-}
-
-.post-meta {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-.post p {
-    margin: 0.5rem 0;
-}
-
-/* Sidebar */
-.blog-sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #444;
-}
-
-.blog-sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.blog-sidebar li {
-    margin: 0.5rem 0;
-}
-
-.blog-sidebar a {
-    text-decoration: none;
-    color: #ff7b7b;
-    font-weight: 600;
-}
-
-/* Footer */
-.footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    background: #F25278;
     padding: 1rem;
-    margin-top: 2rem;
+    text-align: center;
 }
 
-.footer a {
-    color: #ff7b7b;
-    text-decoration: none;
-}
-
-/* Logo */
 .logo {
     width: 6.25rem; /* Adjust size as needed */
     height: auto;
@@ -117,7 +30,7 @@ body {
 
 .nav-link {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Added text-decoration */
     margin: 0 1rem;
     font-weight: bold;
 }
@@ -126,21 +39,210 @@ body {
     color: #333;
 }
 
+/* Header Styles */
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.header-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image {
+    display: flex;
+    animation: slide 15s infinite ease-in-out;
+}
+
+.header-image img {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    40%, 60% { transform: translateX(-100%); }
+    80%, 100% { transform: translateX(-200%); }
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.8);
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.header-content a {
+    display: inline-block;
+    margin: 0.6875rem;
+    padding: 1rem 2rem;
+    border: 0.1875rem solid white;
+    color: white;
+    text-decoration: none; /* Added text-decoration */
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-content a:hover {
+    background-color: white;
+    color: rgb(255, 161, 184);
+}
+
+/* Product Section Styles */
+.product-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #ffe7b4;
+    margin-bottom: 3rem;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 15.625rem;
+    height: 21.875rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 11.25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.product-info {
+    padding-top: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+/* Section Background Colors */
+#occasion-collections {
+    background-color: #f28b82;
+}
+
+#arrangement-collections {
+    background-color: #d0c4ff;
+}
+
+#special-offers {
+    background-color: #c5e1f7;
+}
+
+/* Reviews Section Styles */
+.reviews {
+    text-align: center;
+}
+
+.reviews-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.review {
+    flex: 0 0 33.33%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.review-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+button.prev, button.next {
+    background: #ff69b4;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    text-decoration: none; /* Added text-decoration */
+}
+
+button.prev:hover, button.next:hover {
+    color: #0066cc;
+}
+
+/* Contact Us and Footer */
+.contact-us, .footer {
+    text-align: left;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 48rem) {
     .blog-section {
         grid-template-columns: 1fr;
-    }
-    .navbar {
-        flex-wrap: wrap;
-    }
-    .post h3 {
-        font-size: 1.2rem;
-    }
-    .post img {
-        border-radius: 4px;
-    }
-    .blog-sidebar {
-        margin-top: 2rem;
     }
 }
