@@ -17,20 +17,20 @@ body {
     display: flex;
     align-items: center;
     background: #F25278;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
 }
 
 .logo {
-    width: 100px; /* Adjust size as needed */
+    width: 6.25rem; /* Adjust size as needed */
     height: auto;
-    margin-right: 160px;
+    margin-right: 10rem;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
-    margin: 0 16px;
+    margin: 0 1rem;
     font-weight: bold;
 }
 
@@ -74,30 +74,30 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow */
+    text-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.8); /* Slightly stronger shadow */
 }
 
 .header-content h1 {
-    font-size: 64px; /* Increased font size */
+    font-size: 4rem; /* Increased font size */
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
 }
 
 .header-content p {
-    font-size: 24px; /* Larger text for the paragraph */
-    margin: 24px 0;
+    font-size: 1.5rem; /* Larger text for the paragraph */
+    margin: 1.5rem 0;
 }
 
 .header-content a {
     display: inline-block;
-    margin: 11px;
-    padding: 16px 32px; /* Larger buttons */
-    border: 3px solid white;
+    margin: 0.6875rem;
+    padding: 1rem 2rem; /* Larger buttons */
+    border: 0.1875rem solid white;
     color: white;
     text-decoration: none;
-    font-size: 19.2px; /* Larger button text */
-    border-radius: 6.4px;
+    font-size: 1.2rem; /* Larger button text */
+    border-radius: 0.4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -108,62 +108,62 @@ body {
 
 /* Product Section Styles */
 .product-section {
-    padding: 48px 16px;
+    padding: 3rem 1rem;
     text-align: center;
     background-color: #ffe7b4;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .product-section h2 {
-    font-size: 40px;
-    margin-bottom: 32px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .product-grid {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .product-card {
-    width: 250px;
-    height: 350px;
-    padding: 24px;
+    width: 15.625rem;
+    height: 21.875rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card img {
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .product-info {
-    padding-top: 16px;
+    padding-top: 1rem;
 }
 
 .product-card h3 {
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .product-card p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #333;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
 }
 
 /* Section Background Colors */
@@ -192,23 +192,23 @@ body {
 
 .review {
     flex: 0 0 33.33%;
-    padding: 16px;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
 .review-box {
     background-color: white;
-    padding: 32px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .profile-pic {
-    width: 96px;
-    height: 96px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     object-fit: cover;
 }
 
@@ -216,10 +216,10 @@ button.prev, button.next {
     background: #ff69b4;
     border: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 8px 16px;
-    margin: 16px;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
 }
 
 button.prev:hover, button.next:hover {
@@ -228,18 +228,18 @@ button.prev:hover, button.next:hover {
 
 /* Contact Us and Footer */
 .contact-us, .footer {
-    text-align:left;
-    padding: 32px;
+    text-align: left;
+    padding: 2rem;
     background: #333;
     color: #fff;
 }
 
 .footer-info {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .blog-section {
         grid-template-columns: 1fr;
     }
