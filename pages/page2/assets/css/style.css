@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; /* Applied globally */
 }
 
 /* Body and Font Styles */
@@ -13,32 +13,6 @@ body {
     line-height: 1.6;
 }
 
-/* FAQ Section Styles */
-.faq-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-}
-
-.faq-item {
-    margin-bottom: 1rem;
-}
-
-.faq-question {
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #F25278;
-    margin-bottom: 0.5rem;
-}
-
-.faq-answer {
-    display: none;
-    font-size: 1rem;
-    color: #333;
-    padding-left: 1rem;
-}
-
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -46,17 +20,18 @@ body {
     background: #F25278;
     padding: 1rem;
     text-align: center;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .logo {
-    width: 4rem; /* Adjusted size */
+    width: 6.25rem; /* Adjust size as needed */
     height: auto;
-    margin-right: 3rem; /* Reduced margin */
+    margin-right: 10rem;
 }
 
 .nav-link {
     color: white;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none; /* Ensures no underline */
     margin: 0 1rem;
     font-weight: bold;
 }
@@ -122,7 +97,7 @@ body {
     padding: 1rem 2rem;
     border: 0.1875rem solid white;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* No text decoration */
     font-size: 1.2rem;
     border-radius: 0.4rem;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -131,129 +106,6 @@ body {
 .header-content a:hover {
     background-color: white;
     color: rgb(255, 161, 184);
-}
-
-/* Blog Section Styling */
-.blog-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-/* Blog Posts Grid */
-.blog-container {
-    flex: 3;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.blog-post {
-    background: #fff;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-post:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
-}
-
-.post-image img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.post-content {
-    padding: 1rem;
-}
-
-.post-content h3 {
-    font-size: 1.5rem;
-    color: #F25278;
-    margin-bottom: 0.5rem;
-}
-
-.post-content .post-meta {
-    font-size: 0.875rem;
-    color: #777;
-    margin-bottom: 1rem;
-}
-
-.post-content p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Blog Sidebar Styling */
-.blog-sidebar {
-    flex: 1;
-    background: #ffe7b4;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.blog-sidebar h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #F25278;
-}
-
-.blog-sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.blog-sidebar ul li {
-    margin-bottom: 0.5rem;
-}
-
-.blog-sidebar ul li a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.blog-sidebar ul li a:hover {
-    color: #F25278;
-}
-
-/* Footer Styling */
-.contact-us, .footer {
-    background: #333;
-    color: #fff;
-    padding: 2rem;
-}
-
-.contact-us h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.footer-info, .copyright {
-    margin-bottom: 1rem;
-}
-
-.footer-info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.footer-info p {
-    font-size: 0.875rem;
-    margin: 0.5rem 0;
-}
-
-.copyright p {
-    font-size: 0.875rem;
-    text-align: center;
 }
 
 /* Product Section Styles */
@@ -370,7 +222,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none; /* No text decoration */
 }
 
 button.prev:hover, button.next:hover {
@@ -391,7 +243,18 @@ button.prev:hover, button.next:hover {
 
 /* Responsive Design */
 @media (max-width: 48rem) {
+    .navbar {
+        flex-direction: column; /* Stack navbar links vertically on small screens */
+        text-align: left;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Display products in a single column on small screens */
+    }
+
     .blog-section {
+        display: grid;
         grid-template-columns: 1fr;
     }
 }
