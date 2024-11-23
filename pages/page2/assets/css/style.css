@@ -20,18 +20,19 @@ body {
     background: #F25278;
     padding: 1rem;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .logo {
-    width: 4rem; /* Adjusted size */
+    width: 4rem;
     height: auto;
-    margin-right: 3rem; /* Reduced margin */
+    margin-right: 2rem; /* Adjusted margin */
 }
 
 .nav-link {
     color: white;
-    text-decoration: none; /* Added text-decoration */
-    margin: 0 1rem;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
     font-weight: bold;
 }
 
@@ -343,7 +344,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    text-decoration: none; /* Added text-decoration */
+    text-decoration: none;
 }
 
 button.prev:hover, button.next:hover {
@@ -363,11 +364,25 @@ button.prev:hover, button.next:hover {
 }
 
 /* Responsive Design */
-
 @media (max-width: 48rem) {  
-    .blog-section { 
-        grid-template-columns: 1fr;             
+    .navbar {
+        flex-direction: column;
+        text-align: left;
     }
-    
-    
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .blog-section { 
+        flex-direction: column;
+    }
+
+    .reviews-slider {
+        flex-direction: column;
+    }
+
+    .footer-info, .copyright {
+        text-align: center;
+    }
 }
