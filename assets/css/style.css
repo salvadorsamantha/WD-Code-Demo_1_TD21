@@ -188,8 +188,8 @@ header .fa-bars {
 
 .about .row .content {
   flex: 1 1 40rem;
-  width: 60rem; /* Ensure it takes full width on smaller screens */
-  display: flex; /* Corrected to use 'flex', not 'flexbox' */
+  width: 60rem;
+  display: flex;
   flex-direction: column; /* Stack the header and paragraph vertically */
   justify-content: flex-start; /* Align to the top of the container */
   align-items: center; /* Horizontally center the content */
