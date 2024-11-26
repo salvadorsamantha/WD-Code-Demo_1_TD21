@@ -120,7 +120,7 @@ header .fa-bars {
   justify-content: flex-end; /* Align content to the right */
   text-align: right; /* Align text inside to the right */
   min-height: 100vh;
-  background: url(/assets/images/flower\ shop\ 3.jpg) no-repeat;
+  background: url(/assets/img/flower\ shop\ 3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding-right: 9%; /* Add padding for spacing on the right */
