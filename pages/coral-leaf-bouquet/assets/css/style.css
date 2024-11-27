@@ -20,6 +20,22 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #2d110f;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, 0.5);
+}
+
+.heading span {
+    color: var(--pink);
+}
 
 /* Add styles for the button */
 .home .btn {
@@ -52,10 +68,17 @@ header {
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+header .logo-image {
+    max-width: 100px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center-align with other elements */
+}
+
 header .logo {
     font-size: 3rem;
     color: #c83861;
     font-weight: bolder;
+    font-family: "Dancing Script", cursive; /* Graceful cursive font */
 }
 
 header .logo span {
@@ -72,6 +95,7 @@ header .navbar a {
     padding: 0 1.5rem;
     color: rgb(53, 87, 14);
     margin-left: 1.5rem;
+    font-family: "Dancing Script", cursive; /* Graceful cursive font */
 }
 
 header .icons {
@@ -96,6 +120,12 @@ header .fa-bars {
     cursor: pointer;
     border: 0.1rem solid rgba(0, 0, 0, 0.3);
     display: none;
+}
+
+header .logo-image {
+    max-width: 50px; /* Resize to small */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Add spacing between the image and logo text */
 }
 
 /* Default button style */
