@@ -95,7 +95,7 @@ header .navbar a {
   padding: 0 1.5rem;
   color: rgb(53, 87, 14);
   margin-left: 1.5rem;
-  font-family: "Dancing Script", cursive; /* Graceful cursive font */
+  font-family: "Dancing Script", cursive; 
 }
 
 header .icons {
@@ -166,7 +166,7 @@ header .logo-image {
 .about .row {
   display: flex;
   align-items: center;
-  justify-content: center; /* Add this line to center the content horizontally */
+  justify-content: center; 
   gap: 2rem;
   flex-wrap: wrap;
   padding: 5rem 0;
@@ -321,7 +321,7 @@ header .logo-image {
 
 /* Adjust the image size */
 .icons-container .icons img {
-  max-width: 60px; /* Set maximum width to make the images smaller */
+  max-width: 60px; 
   height: auto; /* Maintain the aspect ratio */
 }
 
