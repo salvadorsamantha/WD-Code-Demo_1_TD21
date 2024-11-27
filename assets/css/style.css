@@ -135,9 +135,13 @@ header .logo-image {
   justify-content: flex-end; /* Align content to the right */
   text-align: right; /* Align text inside to the right */
   min-height: 100vh;
-  background-image: url('../img/flowershop1.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+
+.bg {
+  background-image: url('/assets/img/flowershop1.jpg');
+  height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .home .content {
