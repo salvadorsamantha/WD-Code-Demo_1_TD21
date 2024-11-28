@@ -95,7 +95,7 @@ header .navbar a {
   padding: 0 1.5rem;
   color: rgb(53, 87, 14);
   margin-left: 1.5rem;
-  font-family: "Dancing Script", cursive; 
+  font-family: "Dancing Script", cursive; /* Graceful cursive font */
 }
 
 header .icons {
@@ -135,7 +135,7 @@ header .logo-image {
   justify-content: flex-end; /* Align content to the right */
   text-align: right; /* Align text inside to the right */
   min-height: 100vh;
-  background: url('../img/flowershop1.jpg') no-repeat;
+  background: url('/assets/img/flowershop1.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -166,7 +166,7 @@ header .logo-image {
 .about .row {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center; /* Add this line to center the content horizontally */
   gap: 2rem;
   flex-wrap: wrap;
   padding: 5rem 0;
@@ -321,7 +321,7 @@ header .logo-image {
 
 /* Adjust the image size */
 .icons-container .icons img {
-  max-width: 60px; 
+  max-width: 60px; /* Set maximum width to make the images smaller */
   height: auto; /* Maintain the aspect ratio */
 }
 
