@@ -135,7 +135,7 @@ header .logo-image {
   justify-content: flex-end; /* Align content to the right */
   text-align: right; /* Align text inside to the right */
   min-height: 100vh;
-  background: url('/assets/img/flowershop1.jpg') no-repeat;
+  background: url('../img/flowershop1.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
